@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cửa Kính Nhôm Hoàng Anh Owin - Chuyên Sản Xuất & Lắp Đặt</title>
+    <link rel="stylesheet" href="assets/style.css">
+</head>
+
+<body>
+    <!-- Header -->
+    <header class="main-header">
+        <div class="nav-container">
+            <div class="logo">
+                <img src="assets/images/logo.jpg" alt="Hoàng Anh Owin"
+                    style="height: 60px; width: auto; object-fit: contain;">
+            </div>
+            <nav>
+                <ul class="nav-menu">
+                    <li><a href="#" onclick="showSection('home')" id="nav-home">TRANG CHỦ</a></li>
+                    <li><a href="#" onclick="showProducts('cua-chinh')" id="nav-cua-chinh">CỬA CHÍNH</a></li>
+                    <li><a href="#" onclick="showProducts('cua-phu')" id="nav-cua-phu">CỬA PHỤ</a></li>
+                    <li><a href="#" onclick="showProducts('cua-so')" id="nav-cua-so">CỬA SỔ</a></li>
+                    <li><a href="#" onclick="showProducts('cua-phong')" id="nav-cua-phong">CỬA PHÒNG</a></li>
+                    <li><a href="#" onclick="showProducts('cua-khac')" id="nav-cua-khac">CỬA KHÁC</a></li>
+                </ul>
+            </nav>
+            <div class="search-box">
+                <input type="text" placeholder="Tìm kiếm sản phẩm..." id="search-input">
+                <button class="search-btn" id="search-btn">🔍</button>
+                <div class="search-results" id="search-results"></div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Home Section -->
+    <div id="home" class="page-section">
+        <!-- Hero Section -->
+
+        <section class="hero">
+            <div class="snowflakes">
+                <div class="snowflake">❄</div>
+                <div class="snowflake">❅</div>
+                <div class="snowflake">❆</div>
+                <div class="snowflake">❄</div>
+                <div class="snowflake">❅</div>
+                <div class="snowflake">❆</div>
+                <div class="snowflake">❄</div>
+                <div class="snowflake">❅</div>
+                <div class="snowflake">❆</div>
+                <div class="snowflake">❄</div>
+            </div>
+            <div class="wave-container">
+                <div class="wave"></div>
+                <div class="wave"></div>
+                <div class="wave"></div>
+            </div>
+            <div class="matrix-container">
+                <div class="matrix-pattern">
+                    <!-- 20 cột ma trận -->
+                    <div class="matrix-column"></div>
+                    <div class="matrix-column"></div>
+                    <div class="matrix-column"></div>
+                    <div class="matrix-column"></div>
+                    <div class="matrix-column"></div>
+                    <div class="matrix-column"></div>
+                    <div class="matrix-column"></div>
+                    <div class="matrix-column"></div>
+                    <div class="matrix-column"></div>
+                    <div class="matrix-column"></div>
+                    <div class="matrix-column"></div>
+                    <div class="matrix-column"></div>
+                    <div class="matrix-column"></div>
+                    <div class="matrix-column"></div>
+                    <div class="matrix-column"></div>
+                    <div class="matrix-column"></div>
+                    <div class="matrix-column"></div>
+                    <div class="matrix-column"></div>
+                    <div class="matrix-column"></div>
+                    <div class="matrix-column"></div>
+                </div>
+            </div>
+            <div class="hero-content">
+                <h1>CỬA KÍNH NHÔM HOÀNG ANH OWIN</h1>
+                <p>Nhà thầu nhôm kính với hơn 10 năm kinh nghiệm thi công những công trình quy mô và chất lượng nhất,
+                    mang đến sự hài lòng tuyệt đối cho khách hàng</p>
+                <div class="hero-cta">
+                    <a href="javascript:void(0);" class="hero-btn primary" onclick="openServiceDetail('pricing')">
+                        <span class="hero-btn-icon">🏠</span>
+                        Xem Bảng Giá
+                    </a>
+                    </a>
+                    <a href="https://zalo.me/0799040616" target="_blank" class="hero-btn">
+                        <span class="hero-btn-icon">💬</span>
+                        Liên Hệ Qua Zalo
+                    </a>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Center Content Section -->
+        <section class="center-content">
+            <div class="container">
+                <h2>CHUYÊN GIA VỀ CỬA KÍNH NHÔM</h2>
+                <p>Với hơn 10 năm kinh nghiệm trong ngành, Hoàng Anh Owin tự hào là đơn vị hàng đầu trong lĩnh vực thiết
+                    kế, sản xuất và lắp đặt các loại cửa kính nhôm cao cấp. Chúng tôi cam kết mang đến cho khách hàng
+                    những sản phẩm chất lượng nhất với giá cả cạnh tranh nhất trên thị trường.</p>
+            </div>
+        </section>
+
+        <!-- Services Section -->
+        <section class="services">
+            <div class="container">
+                <h2 class="section-title">DỊCH VỤ CỦA CHÚNG TÔI</h2>
+                <div class="services-grid">
+                    <div class="service-card" onclick="openServiceDetail('pricing')">
+                        <div class="service-icon">💰</div>
+                        <h3>BẢNG GIÁ Chung</h3>
+                        <p>Bảng giá được cập nhật thường xuyên và chuẩn nhất</p>
+                    </div>
+                    <div class="service-card" onclick="openServiceDetail('shipping')">
+                        <div class="service-icon">🚚</div>
+                        <h3>HỖ TRỢ VẬN CHUYỂN</h3>
+                        <p>Hoàng Anh Owin luôn có những chính sách vận chuyển tốt nhất</p>
+                    </div>
+                    <div class="service-card" onclick="openServiceDetail('support')">
+                        <div class="service-icon">📞</div>
+                        <h3>TƯ VẤN MIỄN PHÍ 24/24</h3>
+                        <p>Luôn có bộ phận kỹ thuật để hỗ trợ tư vấn</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Company Info Section -->
+        <section class="company-info">
+            <div class="container">
+                <h2 class="section-title">VỀ HOÀNG ANH OWIN</h2>
+                <div class="info-grid">
+                    <div class="info-card">
+                        <div class="info-image">
+                            <img src="assets/images/nha.jpg" alt="Showroom Hoàng Anh Owin">
+                        </div>
+                        <div class="info-content">
+                            <h3>SHOWROOM & XƯỞNG SẢN XUẤT</h3>
+                            <p>Với không gian showroom rộng lớn và xưởng sản xuất hiện đại, chúng tôi tự hào mang đến
+                                cho khách hàng những sản phẩm cửa nhôm kính chất lượng cao nhất. Đội ngũ thợ lành nghề
+                                với hơn 10 năm kinh nghiệm đảm bảo mỗi sản phẩm đều đạt tiêu chuẩn hoàn hảo.</p>
+                            <ul class="info-features">
+                                <li>✓ Showroom trưng bày đa dạng mẫu mã</li>
+                                <li>✓ Xưởng sản xuất quy mô lớn</li>
+                                <li>✓ Đội ngũ thợ lành nghề</li>
+                                <li>✓ Thiết bị gia công hiện đại</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="info-card">
+                        <div class="info-content">
+                            <h3>VỊ TRÍ THUẬN TIỆN</h3>
+                            <p>Tọa lạc tại vị trí thuận lợi, dễ dàng tiếp cận từ nhiều quận huyện. Khách hàng có thể dễ
+                                dàng tìm đến showroom để tham quan, tư vấn và lựa chọn sản phẩm phù hợp nhất cho ngôi
+                                nhà của mình.</p>
+                            <ul class="info-features">
+                                <li>📍 Địa chỉ dễ tìm, giao thông thuận lợi</li>
+                                <li>🚗 Bãi đỗ xe rộng rãi</li>
+                                <li>🕐 Mở cửa 7 ngày/tuần</li>
+                                <li>📞 Hỗ trợ tư vấn 24/7</li>
+                            </ul>
+                        </div>
+                        <div class="info-image">
+                            <img src="assets/images/map.jpg" alt="Vị trí Hoàng Anh Owin">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- Products Section -->
+    <div id="products" class="page-section products">
+        <div class="container">
+            <h2 class="section-title" id="product-title">SẢN PHẨM CỬA CHÍNH</h2>
+            <div class="products-container">
+                <!-- Products Grid -->
+                <div class="products-grid">
+                    <div class="products-list" id="products-list">
+                        <!-- Products will be loaded here dynamically -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Product Detail Modal -->
+    <div id="productModal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2 id="modal-title">Chi Tiết Sản Phẩm</h2>
+                <span class="close" onclick="closeModal()">&times;</span>
+            </div>
+            <div class="modal-body">
+                <div class="product-detail-grid">
+                    <div class="product-detail-image" id="modal-image">🚪</div>
+                    <div>
+                        <h3 id="modal-product-name">Tên Sản Phẩm</h3>
+                        <div class="product-price" style="margin: 20px 0; text-align: center;">
+                            <span class="current-price" id="modal-price">0 VNĐ</span>
+                            <span class="old-price" id="modal-old-price">0 VNĐ</span>
+                        </div>
+                        <div class="product-specs">
+                            <h4 style="margin-bottom: 15px;">Thông Số Kỹ Thuật</h4>
+                            <div id="modal-specs"></div>
+                        </div>
+                    </div>
+                </div>
+                <div id="modal-description"></div>
+                <div class="contact-info">
+                    <h4>📞 LIÊN HỆ ĐẶT HÀNG</h4>
+                    <p style="margin: 10px 0;">Hotline: 0799.040.616</p>
+                    <p>Email: hoanganh23476@gmail.com</p>
+                    <a href="https://zalo.me/0799040616" target="_blank">
+                        <button class="btn" style="margin-top: 15px; background: white; color: #28a745;">💬 Liên Hệ Qua
+                            Zalo</button>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Service Detail Modal -->
+    <div id="serviceModal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2 id="service-modal-title">Chi Tiết Dịch Vụ</h2>
+                <span class="close" onclick="closeServiceModal()">&times;</span>
+            </div>
+            <div class="modal-body">
+                <div id="service-modal-content">
+                    <!-- Service details will be loaded here -->
+                </div>
+                <div class="contact-info">
+                    <h4>📞 LIÊN HỆ NGAY</h4>
+                    <p style="margin: 10px 0;">Hotline: 0799.040.616</p>
+                    <p>Email: hoanganh23476@gmail.com</p>
+                    <a href="https://zalo.me/0799040616" target="_blank">
+                        <button class="btn" style="margin-top: 15px;">💬 Liên Hệ Qua Zalo</button>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 Hoàng Anh OWIN Hà Tĩnh</p>
+            <p>📞 0799.040.616 | 📧 hoanganh23476@gmail.com</p>
+        </div>
+    </footer>
+    <script src="assets/script.js"></script>
+</body>
+
+</html>
