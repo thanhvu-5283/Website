@@ -967,6 +967,111 @@ body {
     color: #555;
 }
 
+.price-item,
+.shipping-item,
+.support-item,
+.location-item {
+    background: #f8f9fa;
+    padding: 20px;
+    border-radius: 10px;
+    border-left: 4px solid #2c5aa0;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+}
+
+.price-item:hover,
+.shipping-item:hover,
+.support-item:hover,
+.location-item:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+}
+
+.price-item h4,
+.shipping-item h4,
+.support-item h4,
+.location-item h4 {
+    color: #333;
+    margin-bottom: 10px;
+    font-size: 16px;
+}
+
+/* Grid layout cho containers - 1 cột theo hàng dọc */
+.price-table,
+.shipping-info,
+.support-channels {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+    margin: 20px 0;
+}
+
+.contact-number,
+.contact-email {
+    color: #2c5aa0;
+    font-weight: bold;
+    font-size: 16px;
+    margin: 10px 0;
+}
+
+.contact-number:hover,
+.contact-email:hover {
+    color: #1a3d70;
+}
+
+/* Style cho note sections */
+.shipping-coverage,
+.support-services {
+    background: #e8f4f8;
+    padding: 20px;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
+.shipping-coverage h4,
+.support-services h4 {
+    color: #2c5aa0;
+    margin-bottom: 15px;
+}
+
+.shipping-coverage ul,
+.support-services ul {
+    list-style: none;
+    padding: 0;
+}
+
+.shipping-coverage li,
+.support-services li {
+    padding: 5px 0;
+    color: #555;
+}
+
+.shipping-coverage,
+.support-services {
+    background: #f8f9fa;
+    padding: 20px;
+    border-radius: 12px;
+    margin-top: 20px;
+}
+
+.shipping-coverage h4,
+.support-services h4 {
+    color: #2c5aa0;
+    margin-bottom: 15px;
+}
+
+.shipping-coverage ul,
+.support-services ul {
+    list-style: none;
+    padding: 0;
+}
+
+.shipping-coverage li,
+.support-services li {
+    padding: 5px 0;
+    font-size: 16px;
+}
+
 /* Service Card Hover Effect */
 .service-card {
     cursor: pointer;
@@ -1172,34 +1277,6 @@ body {
 
 /* ... tiếp tục cho đủ 20 cột tương tự */
 
-/* Nội dung text ma trận */
-.matrix-column::before {
-    content: "アイウエオカキクケコサシスセソタチツテトナニヌネノハヒフヘホマミムメモヤユヨラリルレロワヲンABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789";
-    position: absolute;
-    top: 0;
-    left: 0;
-    background: linear-gradient(to bottom,
-            #ffffff 0%,
-            #ffffff 5%,
-            #00ff41 10%,
-            #00ff41 20%,
-            #00dd33 30%,
-            #00bb22 40%,
-            #009911 50%,
-            #007700 60%,
-            #005500 70%,
-            #003300 80%,
-            rgba(0, 255, 65, 0.5) 90%,
-            transparent 100%);
-    -webkit-background-clip: text;
-    background-clip: text;
-    -webkit-text-fill-color: transparent;
-    writing-mode: vertical-lr;
-    letter-spacing: 1px;
-    text-rendering: optimizeLegibility;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-}
 
 /* Animation sóng rơi */
 @keyframes fall {

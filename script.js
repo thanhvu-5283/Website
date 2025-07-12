@@ -5,292 +5,213 @@ const productData = {
         title: 'SẢN PHẨM CỬA CHÍNH',
         products: [
             {
-                id: 'cc001',
-                ten: 'Cửa Kính Cường Lực 2 Cánh Premium',
-                gia: '3.200.000',
-                anh: 'assets/images/1.jpg',
-                chatlieu: 'Nhôm OWIN + kính hộp hoa nan mạ đồng',
-                kichthuoc: '2m x 2.8m',
-                bancanh: '100',
-                mau: 'Vân Gỗ Trắc',
-                doday: '8mm',
-                phao: '2 mặt',
-                baohanh: '5 năm',
-                tinhnang: ['Chống trộm', 'Cách âm tốt', 'Chống thấm nước'],
-                mota: 'Đừng mua, phí money',
                 loai: 'Cửa Chính',
-                phukien: ['chim thanh', 'chim lâm', 'chim anh anh']
+                id: 'cc001',
+                ten: 'Cửa Thủy Lực 2 Cánh Nhôm OWIN Premium',
+                anh: 'assets/images/cc001.jpg',
+                gia: '55.600.000',
+                chatlieuphu: 'Kính hộp nan hoa mạ đồng',
+                mau: 'Vân gỗ trắc',
+                kichthuoc: '2.8m x 2.8m',
+                khungbao: '55 x 200',
+                bancanh: '60 x 180',
+                doday: '',
+                phao: 'Biệt thự + mặt trong',
+                phaotrongcanh: 'Có',
+                baohanh: '5 năm',
+                phukien: ['Bản lề sàn alder x2', 'Ngỗng trên dưới', 'Tay nắm KOLN x2', 'Khóa đồng Owin', 'Chốt cánh phụ'],
+                tinhnang: ['An toàn và bảo mật', 'Chịu lực và chống va đập', 'Thẫm mỹ sang trọng', 'Thẫm mỹ sang trọng', 'Có 4 màu nhôm'],
+                mota: 'Cửa thủy lực nhôm OWIN là sự kết hợp hoàn hảo giữa thẩm mỹ tinh tế và công năng vượt trội. Với thiết kế hiện đại, vật liệu chất lượng cao và hệ phụ kiện đồng bộ, sản phẩm mang đến trải nghiệm sử dụng êm ái, bền bỉ và sang trọng cho mọi không gian sống.'
             },
             {
-                id: 'cc001',
-                ten: 'Cửa Kính Cường Lực 2 Cánh Premium',
-                gia: '3.200.000',
-                anh: 'assets/images/2.jpg',
-                chatlieu: 'Nhôm OWIN + kính hộp hoa nan mạ đồng',
-                kichthuoc: '2m x 2.8m',
-                bancanh: '100',
-                mau: 'Vân Gỗ Trắc',
-                doday: '8mm',
-                phao: '2 mặt',
-                baohanh: '5 năm',
-                tinhnang: ['Chống trộm', 'Cách âm tốt', 'Chống thấm nước'],
-                mota: 'Đừng mua, phí money',
                 loai: 'Cửa Chính',
-                phukien: ['chim thanh', 'chim lâm', 'chim anh anh']
+                id: 'cc002',
+                ten: 'Cửa Thủy Lực 2 Cánh Nhôm OWIN Premium',
+                anh: 'assets/images/cc002.jpg',
+                gia: '54.600.000',
+                chatlieuphu: 'Tấm liền nguyên khối + kính cl 10mm',
+                mau: 'Vân gỗ trắc',
+                kichthuoc: '2.8m x 2.8m',
+                khungbao: '55 x 200',
+                bancanh: '60 x 180',
+                doday: '',
+                phao: 'Biệt thự + mặt trong',
+                phaotrongcanh: 'Có',
+                baohanh: '5 năm',
+                phukien: ['Bản lề sàn alder x2', 'Ngỗng trên dưới', 'Tay nắm KOLN x2', 'Khóa đồng Owin', 'Chốt cánh phụ'],
+                tinhnang: ['An toàn và bảo mật', 'Chịu lực và chống va đập', 'Thẫm mỹ sang trọng', 'Thẫm mỹ sang trọng', 'Có 4 màu nhôm'],
+                mota: 'Cửa thủy lực nhôm OWIN là sự kết hợp hoàn hảo giữa thẩm mỹ tinh tế và công năng vượt trội. Với thiết kế hiện đại, vật liệu chất lượng cao và hệ phụ kiện đồng bộ, sản phẩm mang đến trải nghiệm sử dụng êm ái, bền bỉ và sang trọng cho mọi không gian sống.'
             },
             {
-                id: 'cc001',
-                ten: 'Cửa Kính Cường Lực 2 Cánh Premium',
-                gia: '3.200.000',
-                anh: 'assets/images/3.jpg',
-                chatlieu: 'Nhôm OWIN + kính hộp hoa nan mạ đồng',
-                kichthuoc: '2m x 2.8m',
-                bancanh: '100',
-                mau: 'Vân Gỗ Trắc',
-                doday: '8mm',
-                phao: '2 mặt',
-                baohanh: '5 năm',
-                tinhnang: ['Chống trộm', 'Cách âm tốt', 'Chống thấm nước'],
-                mota: 'Đừng mua, phí money',
                 loai: 'Cửa Chính',
-                phukien: ['chim thanh', 'chim lâm', 'chim anh anh']
+                id: 'cc003',
+                ten: 'Cửa Thủy Lực 2 Cánh Nhôm OWIN Premium',
+                anh: 'assets/images/cc003.jpg',
+                gia: '41.000.000',
+                chatlieuphu: 'Kính cl 10mm',
+                mau: 'Vân gỗ trắc',
+                kichthuoc: '3m x 2.8m',
+                khungbao: '55 x 200',
+                bancanh: '60 x 180',
+                doday: '',
+                phao: '2 mặt',
+                phaotrongcanh: 'Có',
+                baohanh: '5 năm',
+                phukien: ['Bản lề sàn alder x2', 'Ngỗng trên dưới', 'Tay nắm KOLN x2', 'Khóa đồng Owin', 'Chốt cánh phụ', 'Góc đồng cá chép'],
+                tinhnang: ['An toàn và bảo mật', 'Chịu lực và chống va đập', 'Thẫm mỹ sang trọng', 'Thẫm mỹ sang trọng', 'Có 4 màu nhôm'],
+                mota: 'Cửa thủy lực nhôm OWIN là sự kết hợp hoàn hảo giữa thẩm mỹ tinh tế và công năng vượt trội. Với thiết kế hiện đại, vật liệu chất lượng cao và hệ phụ kiện đồng bộ, sản phẩm mang đến trải nghiệm sử dụng êm ái, bền bỉ và sang trọng cho mọi không gian sống.'
             },
             {
-                id: 'cc001',
-                ten: 'Cửa Kính Cường Lực 1 Cánh Premium',
-                gia: '3.200.000',
-                anh: 'assets/images/4.jpg',
-                chatlieu: 'Nhôm OWIN + kính hộp hoa nan mạ đồng',
-                kichthuoc: '2m x 2.8m',
-                bancanh: '100',
-                mau: 'Vân Gỗ Trắc',
-                doday: '8mm',
-                phao: '2 mặt',
-                baohanh: '5 năm',
-                tinhnang: ['Chống trộm', 'Cách âm tốt', 'Chống thấm nước'],
-                mota: 'Đừng mua, phí money',
                 loai: 'Cửa Chính',
-                phukien: ['chim thanh', 'chim lâm', 'chim anh anh']
+                id: 'cc004',
+                ten: 'Cửa Thủy Lực 2 Cánh Nhôm OWIN Premium',
+                anh: 'assets/images/cc004.jpg',
+                gia: '49.700.000',
+                chatlieuphu: 'Kính hộp nan hoa mạ đồng',
+                mau: 'Vân gỗ trắc',
+                kichthuoc: '2.4m x 2.8m',
+                khungbao: '55 x 200',
+                bancanh: '60 x 180',
+                doday: '',
+                phao: 'Biệt thự + mặt trong',
+                phaotrongcanh: 'Có',
+                baohanh: '5 năm',
+                phukien: ['Bản lề sàn alder x2', 'Ngỗng trên dưới', 'Tay nắm KOLN x2', 'Khóa đồng Owin', 'Chốt cánh phụ'],
+                tinhnang: ['An toàn và bảo mật', 'Chịu lực và chống va đập', 'Thẫm mỹ sang trọng', 'Thẫm mỹ sang trọng', 'Có 4 màu nhôm'],
+                mota: 'Cửa thủy lực nhôm OWIN là sự kết hợp hoàn hảo giữa thẩm mỹ tinh tế và công năng vượt trội. Với thiết kế hiện đại, vật liệu chất lượng cao và hệ phụ kiện đồng bộ, sản phẩm mang đến trải nghiệm sử dụng êm ái, bền bỉ và sang trọng cho mọi không gian sống.'
+            },
+            {
+                loai: 'Cửa Chính',
+                id: 'cc005',
+                ten: 'Cửa Thủy Lực 2 Cánh Nhôm OWIN Premium',
+                anh: 'assets/images/cc005.jpg',
+                gia: '44.200.000',
+                chatlieuphu: 'Tấm liền nguyên khối',
+                mau: 'Vân gỗ trắc',
+                kichthuoc: '2.7m x 2.8m',
+                khungbao: '55 x 200',
+                bancanh: '60 x 180',
+                doday: '',
+                phao: '2 mặt',
+                phaotrongcanh: 'Có',
+                baohanh: '5 năm',
+                phukien: ['Bản lề sàn alder x2', 'Ngỗng trên dưới', 'Tay nắm KOLN x2', 'Khóa đồng Owin', 'Chốt cánh phụ'],
+                tinhnang: ['An toàn và bảo mật', 'Chịu lực và chống va đập', 'Thẫm mỹ sang trọng', 'Thẫm mỹ sang trọng', 'Có 4 màu nhôm'],
+                mota: 'Cửa thủy lực nhôm OWIN là sự kết hợp hoàn hảo giữa thẩm mỹ tinh tế và công năng vượt trội. Với thiết kế hiện đại, vật liệu chất lượng cao và hệ phụ kiện đồng bộ, sản phẩm mang đến trải nghiệm sử dụng êm ái, bền bỉ và sang trọng cho mọi không gian sống.'
+            },
+            {
+                loai: 'Cửa Chính',
+                id: 'cc006',
+                ten: 'Cửa Thủy Lực 2 Cánh Nhôm OWIN Premium',
+                anh: 'assets/images/cc006.jpg',
+                gia: '49.200.000',
+                chatlieuphu: 'Tấm liền nguyên khối',
+                mau: 'Vân gỗ trắc',
+                kichthuoc: '2.4m x 2.8m',
+                khungbao: '55 x 200',
+                bancanh: '60 x 180',
+                doday: '',
+                phao: 'Biệt thự + mặt trong',
+                phaotrongcanh: 'Có',
+                baohanh: '5 năm',
+                phukien: ['Bản lề sàn alder x2', 'Ngỗng trên dưới', 'Tay nắm KOLN x2', 'Khóa đồng Owin', 'Chốt cánh phụ'],
+                tinhnang: ['An toàn và bảo mật', 'Chịu lực và chống va đập', 'Thẫm mỹ sang trọng', 'Thẫm mỹ sang trọng', 'Có 4 màu nhôm'],
+                mota: 'Cửa thủy lực nhôm OWIN là sự kết hợp hoàn hảo giữa thẩm mỹ tinh tế và công năng vượt trội. Với thiết kế hiện đại, vật liệu chất lượng cao và hệ phụ kiện đồng bộ, sản phẩm mang đến trải nghiệm sử dụng êm ái, bền bỉ và sang trọng cho mọi không gian sống.'
+            },
+            {
+                loai: 'Cửa Chính',
+                id: 'cc007',
+                ten: 'Cửa 2 Cánh Nhôm OWIN hệ khuôn phào kép Premium',
+                anh: 'assets/images/cc007.jpg',
+                gia: '55.700.000',
+                chatlieuphu: 'Tấm liền nguyên khối + kính cl 8mm',
+                mau: 'Vân gỗ trắc',
+                kichthuoc: '3m x 2.8m',
+                khungbao: 'Ôm tường 23',
+                bancanh: '160',
+                doday: '',
+                phao: '2 mặt',
+                phaotrongcanh: 'Có',
+                baohanh: '5 năm',
+                phukien: ['Khóa đa điểm', 'Bản lề bi đũa x12', 'Chốt cánh phụ'],
+                tinhnang: ['An toàn và bảo mật', 'Chịu lực và chống va đập', 'Thẫm mỹ sang trọng', 'Thẫm mỹ sang trọng', 'Có 4 màu nhôm'],
+                mota: 'Cửa thủy lực nhôm OWIN là sự kết hợp hoàn hảo giữa thẩm mỹ tinh tế và công năng vượt trội. Với thiết kế hiện đại, vật liệu chất lượng cao và hệ phụ kiện đồng bộ, sản phẩm mang đến trải nghiệm sử dụng êm ái, bền bỉ và sang trọng cho mọi không gian sống.'
+            },
+            {
+                loai: 'Cửa Chính',
+                id: 'cc008',
+                ten: 'Cửa thủy lực 2 Cánh Nhôm OWIN Premium',
+                anh: 'assets/images/cc008.jpg',
+                gia: '42.200.000',
+                chatlieuphu: 'Kính hộp hoa nan mạ đồng',
+                mau: 'Vân gỗ trắc',
+                kichthuoc: '2.8m x 2.8m',
+                khungbao: '55 x 200',
+                bancanh: '60 x 180',
+                doday: '',
+                phao: '2 mặt',
+                phaotrongcanh: '',
+                baohanh: '5 năm',
+                phukien: ['Bản lề sàn alder x2', 'Ngỗng trên dưới', 'Tay nắm KOLN x2', 'Khóa đồng Owin', 'Chốt cánh phụ', 'Gôc đồng cá chép'],
+                tinhnang: ['An toàn và bảo mật', 'Chịu lực và chống va đập', 'Thẫm mỹ sang trọng', 'Thẫm mỹ sang trọng', 'Có 4 màu nhôm'],
+                mota: 'Cửa thủy lực nhôm OWIN là sự kết hợp hoàn hảo giữa thẩm mỹ tinh tế và công năng vượt trội. Với thiết kế hiện đại, vật liệu chất lượng cao và hệ phụ kiện đồng bộ, sản phẩm mang đến trải nghiệm sử dụng êm ái, bền bỉ và sang trọng cho mọi không gian sống.'
+            },
+            {
+                loai: 'Cửa Chính',
+                id: 'cc009',
+                ten: 'Cửa 2 Cánh Nhôm OWIN hệ khuôn phào kép Premium',
+                anh: 'assets/images/cc009.jpg',
+                gia: '57.900.000',
+                chatlieuphu: 'Kính hộp hoa nan mạ đồng',
+                mau: 'Vân gỗ trắc',
+                kichthuoc: '3m x 2.8m',
+                khungbao: 'Ôm tường 23',
+                bancanh: '160',
+                doday: '',
+                phao: '2 mặt',
+                phaotrongcanh: '',
+                baohanh: '5 năm',
+                phukien: ['khóa đa điểm', 'Chốt cánh phụ', 'Bi đũa x20'],
+                tinhnang: ['An toàn và bảo mật', 'Chịu lực và chống va đập', 'Thẫm mỹ sang trọng', 'Thẫm mỹ sang trọng', 'Có 4 màu nhôm'],
+                mota: 'Cửa thủy lực nhôm OWIN là sự kết hợp hoàn hảo giữa thẩm mỹ tinh tế và công năng vượt trội. Với thiết kế hiện đại, vật liệu chất lượng cao và hệ phụ kiện đồng bộ, sản phẩm mang đến trải nghiệm sử dụng êm ái, bền bỉ và sang trọng cho mọi không gian sống.'
+            },
+            {
+                loai: 'Cửa Chính',
+                id: 'cc010',
+                ten: 'Cửa 2 Cánh Nhôm OWIN hệ khuôn phào kép Premium',
+                anh: 'assets/images/cc010.jpg',
+                gia: '47.700.000',
+                chatlieuphu: 'Kính cl 10mm',
+                mau: 'Vân gỗ trắc',
+                kichthuoc: '3m x 2.8m',
+                khungbao: 'Ôm tường 23',
+                bancanh: '160',
+                doday: '',
+                phao: '2 mặt',
+                phaotrongcanh: 'Có',
+                baohanh: '5 năm',
+                phukien: ['khóa đa điểm', 'Chốt cánh phụ', 'Bi đũa x20'],
+                tinhnang: ['An toàn và bảo mật', 'Chịu lực và chống va đập', 'Thẫm mỹ sang trọng', 'Thẫm mỹ sang trọng', 'Có 4 màu nhôm'],
+                mota: 'Cửa thủy lực nhôm OWIN là sự kết hợp hoàn hảo giữa thẩm mỹ tinh tế và công năng vượt trội. Với thiết kế hiện đại, vật liệu chất lượng cao và hệ phụ kiện đồng bộ, sản phẩm mang đến trải nghiệm sử dụng êm ái, bền bỉ và sang trọng cho mọi không gian sống.'
             }
         ]
     },
     'cua-phu': {
         title: 'SẢN PHẨM CỬA PHỤ',
         products: [
-            {
-                id: 'cc001',
-                ten: 'Cửa Kính Cường Lực 2 Cánh Premium',
-                gia: '3.200.000',
-                anh: 'assets/images/1.jpg',
-                chatlieu: 'Nhôm OWIN + kính hộp hoa nan mạ đồng',
-                kichthuoc: '2m x 2.8m',
-                bancanh: '100',
-                mau: 'Vân Gỗ Trắc',
-                doday: '8mm',
-                phao: '2 mặt',
-                baohanh: '5 năm',
-                tinhnang: ['Chống trộm', 'Cách âm tốt', 'Chống thấm nước'],
-                mota: 'Đừng mua, phí money',
-                loai: 'Cửa Chính',
-                phukien: ['chim thanh', 'chim lâm', 'chim anh anh']
-            },
-            {
-                id: 'cc001',
-                ten: 'Cửa Kính Cường Lực 2 Cánh Premium',
-                gia: '3.200.000',
-                anh: 'assets/images/2.jpg',
-                chatlieu: 'Nhôm OWIN + kính hộp hoa nan mạ đồng',
-                kichthuoc: '2m x 2.8m',
-                bancanh: '100',
-                mau: 'Vân Gỗ Trắc',
-                doday: '8mm',
-                phao: '2 mặt',
-                baohanh: '5 năm',
-                tinhnang: ['Chống trộm', 'Cách âm tốt', 'Chống thấm nước'],
-                mota: 'Đừng mua, phí money',
-                loai: 'Cửa Chính',
-                phukien: ['chim thanh', 'chim lâm', 'chim anh anh']
-            },
-            {
-                id: 'cc001',
-                ten: 'Cửa Kính Cường Lực 2 Cánh Premium',
-                gia: '3.200.000',
-                anh: 'assets/images/3.jpg',
-                chatlieu: 'Nhôm OWIN + kính hộp hoa nan mạ đồng',
-                kichthuoc: '2m x 2.8m',
-                bancanh: '100',
-                mau: 'Vân Gỗ Trắc',
-                doday: '8mm',
-                phao: '2 mặt',
-                baohanh: '5 năm',
-                tinhnang: ['Chống trộm', 'Cách âm tốt', 'Chống thấm nước'],
-                mota: 'Đừng mua, phí money',
-                loai: 'Cửa Chính',
-                phukien: ['chim thanh', 'chim lâm', 'chim anh anh']
-            },
-            {
-                id: 'cc001',
-                ten: 'Cửa Kính Cường Lực 1 Cánh Premium',
-                gia: '3.200.000',
-                anh: 'assets/images/4.jpg',
-                chatlieu: 'Nhôm OWIN + kính hộp hoa nan mạ đồng',
-                kichthuoc: '2m x 2.8m',
-                bancanh: '100',
-                mau: 'Vân Gỗ Trắc',
-                doday: '8mm',
-                phao: '2 mặt',
-                baohanh: '5 năm',
-                tinhnang: ['Chống trộm', 'Cách âm tốt', 'Chống thấm nước'],
-                mota: 'Đừng mua, phí money',
-                loai: 'Cửa Chính',
-                phukien: ['chim thanh', 'chim lâm', 'chim anh anh']
-            }
+
         ]
     },
     'cua-so': {
         title: 'SẢN PHẨM CỬA SỔ',
         products: [
-            {
-                id: 'cc001',
-                ten: 'Cửa Kính Cường Lực 2 Cánh Premium',
-                gia: '3.200.000',
-                anh: 'assets/images/1.jpg',
-                chatlieu: 'Nhôm OWIN + kính hộp hoa nan mạ đồng',
-                kichthuoc: '2m x 2.8m',
-                bancanh: '100',
-                mau: 'Vân Gỗ Trắc',
-                doday: '8mm',
-                phao: '2 mặt',
-                baohanh: '5 năm',
-                tinhnang: ['Chống trộm', 'Cách âm tốt', 'Chống thấm nước'],
-                mota: 'Đừng mua, phí money',
-                loai: 'Cửa Chính',
-                phukien: ['chim thanh', 'chim lâm', 'chim anh anh']
-            },
-            {
-                id: 'cc001',
-                ten: 'Cửa Kính Cường Lực 2 Cánh Premium',
-                gia: '3.200.000',
-                anh: 'assets/images/2.jpg',
-                chatlieu: 'Nhôm OWIN + kính hộp hoa nan mạ đồng',
-                kichthuoc: '2m x 2.8m',
-                bancanh: '100',
-                mau: 'Vân Gỗ Trắc',
-                doday: '8mm',
-                phao: '2 mặt',
-                baohanh: '5 năm',
-                tinhnang: ['Chống trộm', 'Cách âm tốt', 'Chống thấm nước'],
-                mota: 'Đừng mua, phí money',
-                loai: 'Cửa Chính',
-                phukien: ['chim thanh', 'chim lâm', 'chim anh anh']
-            },
-            {
-                id: 'cc001',
-                ten: 'Cửa Kính Cường Lực 2 Cánh Premium',
-                gia: '3.200.000',
-                anh: 'assets/images/3.jpg',
-                chatlieu: 'Nhôm OWIN + kính hộp hoa nan mạ đồng',
-                kichthuoc: '2m x 2.8m',
-                bancanh: '100',
-                mau: 'Vân Gỗ Trắc',
-                doday: '8mm',
-                phao: '2 mặt',
-                baohanh: '5 năm',
-                tinhnang: ['Chống trộm', 'Cách âm tốt', 'Chống thấm nước'],
-                mota: 'Đừng mua, phí money',
-                loai: 'Cửa Chính',
-                phukien: ['chim thanh', 'chim lâm', 'chim anh anh']
-            },
-            {
-                id: 'cc001',
-                ten: 'Cửa Kính Cường Lực 1 Cánh Premium',
-                gia: '3.200.000',
-                anh: 'assets/images/4.jpg',
-                chatlieu: 'Nhôm OWIN + kính hộp hoa nan mạ đồng',
-                kichthuoc: '2m x 2.8m',
-                bancanh: '100',
-                mau: 'Vân Gỗ Trắc',
-                doday: '8mm',
-                phao: '2 mặt',
-                baohanh: '5 năm',
-                tinhnang: ['Chống trộm', 'Cách âm tốt', 'Chống thấm nước'],
-                mota: 'Đừng mua, phí money',
-                loai: 'Cửa Chính',
-                phukien: ['chim thanh', 'chim lâm', 'chim anh anh']
-            }
+
         ]
     },
     'cua-phong': {
         title: 'SẢN PHẨM CỬA PHÒNG',
         products: [
-            {
-                id: 'cc001',
-                ten: 'Cửa Kính Cường Lực 2 Cánh Premium',
-                gia: '3.200.000',
-                anh: 'assets/images/1.jpg',
-                chatlieu: 'Nhôm OWIN + kính hộp hoa nan mạ đồng',
-                kichthuoc: '2m x 2.8m',
-                bancanh: '100',
-                mau: 'Vân Gỗ Trắc',
-                doday: '8mm',
-                phao: '2 mặt',
-                baohanh: '5 năm',
-                tinhnang: ['Chống trộm', 'Cách âm tốt', 'Chống thấm nước'],
-                mota: 'Đừng mua, phí money',
-                loai: 'Cửa Chính',
-                phukien: ['chim thanh', 'chim lâm', 'chim anh anh']
-            },
-            {
-                id: 'cc001',
-                ten: 'Cửa Kính Cường Lực 2 Cánh Premium',
-                gia: '3.200.000',
-                anh: 'assets/images/2.jpg',
-                chatlieu: 'Nhôm OWIN + kính hộp hoa nan mạ đồng',
-                kichthuoc: '2m x 2.8m',
-                bancanh: '100',
-                mau: 'Vân Gỗ Trắc',
-                doday: '8mm',
-                phao: '2 mặt',
-                baohanh: '5 năm',
-                tinhnang: ['Chống trộm', 'Cách âm tốt', 'Chống thấm nước'],
-                mota: 'Đừng mua, phí money',
-                loai: 'Cửa Chính',
-                phukien: ['chim thanh', 'chim lâm', 'chim anh anh']
-            },
-            {
-                id: 'cc001',
-                ten: 'Cửa Kính Cường Lực 2 Cánh Premium',
-                gia: '3.200.000',
-                anh: 'assets/images/3.jpg',
-                chatlieu: 'Nhôm OWIN + kính hộp hoa nan mạ đồng',
-                kichthuoc: '2m x 2.8m',
-                bancanh: '100',
-                mau: 'Vân Gỗ Trắc',
-                doday: '8mm',
-                phao: '2 mặt',
-                baohanh: '5 năm',
-                tinhnang: ['Chống trộm', 'Cách âm tốt', 'Chống thấm nước'],
-                mota: 'Đừng mua, phí money',
-                loai: 'Cửa Chính',
-                phukien: ['chim thanh', 'chim lâm', 'chim anh anh']
-            },
-            {
-                id: 'cc001',
-                ten: 'Cửa Kính Cường Lực 1 Cánh Premium',
-                gia: '3.200.000',
-                anh: 'assets/images/4.jpg',
-                chatlieu: 'Nhôm OWIN + kính hộp hoa nan mạ đồng',
-                kichthuoc: '2m x 2.8m',
-                bancanh: '100',
-                mau: 'Vân Gỗ Trắc',
-                doday: '8mm',
-                phao: '2 mặt',
-                baohanh: '5 năm',
-                tinhnang: ['Chống trộm', 'Cách âm tốt', 'Chống thấm nước'],
-                mota: 'Đừng mua, phí money',
-                loai: 'Cửa Chính',
-                phukien: ['chim thanh', 'chim lâm', 'chim anh anh']
-            }
+
         ]
     }
 };
@@ -332,7 +253,7 @@ function performSearch(query) {
 
                         // Safe property access with fallbacks
                         const productName = (product.ten || '').toLowerCase();
-                        const productMaterial = (product.material || '').toLowerCase();
+                        const productMaterial = (product.chatlieu || '').toLowerCase();
                         const productCategory = (product.loai || '').toLowerCase();
                         const productDesc = (product.mota || '').toLowerCase();
 
@@ -618,35 +539,58 @@ function viewProductDetail(productId) {
 
     // Generate specifications
     const specsHTML = `
+${product.chatlieuphu ? `
     <div class="spec-item">
-        <span><strong>Chất liệu:</strong></span>
-        <span>${product.chatlieu || 'Không có '}</span>
-    </div>
+        <span><strong>Chất liệu phụ:</strong></span>
+        <span>${product.chatlieuphu}</span>
+    </div>` : ''}
+
+${product.mau ? `
     <div class="spec-item">
         <span><strong>Màu:</strong></span>
-        <span>${product.mau || 'Không có '}</span>
-    </div>
+        <span>${product.mau}</span>
+    </div>` : ''}
+
+${product.kichthuoc ? `
     <div class="spec-item">
-        <span><strong>Kích thước:</strong></span>
-        <span>${product.kichthuoc || 'Không có '}</span>
-    </div>
+        <span><strong>Kích thước:</strong></span>
+        <span>${product.kichthuoc}</span>
+    </div>` : ''}
+${product.khungbao ? `
+    <div class="spec-item">
+        <span><strong>Khung bao:</strong></span>
+        <span>${product.khungbao}</span>
+    </div>` : ''}
+${product.bancanh ? `
     <div class="spec-item">
         <span><strong>Bản cánh:</strong></span>
-        <span>${product.bancanh || 'Không có '}</span>
-    </div>
+        <span>${product.bancanh}</span>
+    </div>` : ''}
+
+${product.doday ? `
     <div class="spec-item">
         <span><strong>Độ dày:</strong></span>
-        <span>${product.doday || 'Không có '}</span>
-    </div>
+        <span>${product.doday}</span>
+    </div>` : ''}
+
+${product.phao ? `
     <div class="spec-item">
         <span><strong>Phào:</strong></span>
-        <span>${product.phao || 'Không có '}</span>
-    </div>
+        <span>${product.phao}</span>
+    </div>` : ''}
+
+
+
+${product.phaotrongcanh ? `
+    <div class="spec-item">
+        <span><strong>Phào trong cánh:</strong></span>
+        <span>${product.phaotrongcanh}</span>
+    </div>` : ''}
+${product.baohanh ? `
     <div class="spec-item">
         <span><strong>Bảo hành:</strong></span>
-        <span>${product.baohanh || 'Không có '}</span>
-    </div>
-
+        <span>${product.baohanh}</span>
+    </div>` : ''}
             `;
     document.getElementById('modal-specs').innerHTML = specsHTML;
 
@@ -660,16 +604,21 @@ function viewProductDetail(productId) {
         : '<li>Không có</li>';
 
     const descriptionHTML = `
-    <div style="background: #f8f9fa; padding: 20px; border-radius: 15px; margin-bottom: 20px;">
-        <h5 style="margin-bottom: 10px;">🔧 Phụ Kiện Đi Kèm</h5>
-        <ul style="margin-left: 20px; margin-bottom: 15px;">${phukienHTML}</ul>
-        
-        <h5 style="margin-bottom: 10px;">✨ Tính Năng Nổi Bật</h5>
-        <ul style="margin-left: 20px; margin-bottom: 15px;">${featuresHTML}</ul>
-
-        <h4 style="margin-bottom: 10px;">📄 Mô Tả Sản Phẩm</h4>
-        <p>${product.mota || 'Không có mô tả chi tiết.'}</p>
+<div style="background: #f8f9fa; padding: 20px; border-radius: 15px; margin-bottom: 20px;">
+    <div style="display: flex; flex-wrap: wrap; gap: 20px; margin-bottom: 20px;">
+        <div style="flex: 1; min-width: 200px;">
+            <h5 style="margin-bottom: 10px;">🔧 Phụ Kiện Đi Kèm</h5>
+            <ul style="margin-left: 20px;">${phukienHTML}</ul>
+        </div>
+        <div style="flex: 1; min-width: 200px;">
+            <h5 style="margin-bottom: 10px;">✨ Tính Năng Nổi Bật</h5>
+            <ul style="margin-left: 20px;">${featuresHTML}</ul>
+        </div>
     </div>
+
+    <h4 style="margin-bottom: 10px;">📄 Mô Tả Sản Phẩm</h4>
+    <p>${product.mota || 'Không có mô tả chi tiết.'}</p>
+</div>
 `;
     document.getElementById('modal-description').innerHTML = descriptionHTML;
 
@@ -721,26 +670,26 @@ const serviceDetails = {
                 `
     },
     'shipping': {
-        title: 'HỖ TRỢ VẬN CHUYỂN',
-        icon: '🚚',
+        title: 'VỊ TRÍ XƯỞNG',
+        icon: '📍',
         content: `
                     <div class="service-detail">
-                        <h3>🚛 Chính Sách Vận Chuyển</h3>
+                        <h3>🏭 Vị Trí Xưởng Sản Xuất</h3>
                         <div class="shipping-info">
+                            <div class="location-item" onclick="openGoogleMaps()">
+                                <h4>📍 Địa Chỉ Xưởng</h4>
+                                <p><strong>Cửa Hàng Nhôm Hoàng Anh OWIN</strong></p>
+                                <p>Nhấn để xem đường đi trên Google Maps</p>
+                            </div>
                             <div class="shipping-item">
-                                <h4>🏠 Giao Hàng Tận Nơi</h4>
-                                <p>Miễn phí giao hàng trong bán kính 20km từ showroom</p>
+                                <h4>🚛 Khu Vực Giao Hàng</h4>
+                                <p>Miễn phí giao hàng trong khu vực Nghệ An - Hà Tĩnh - Quảng Bình</p>
                                 <p>Phí vận chuyển hợp lý cho các khu vực xa hơn</p>
                             </div>
                             <div class="shipping-item">
-                                <h4>📦 Đóng Gói Chuyên Nghiệp</h4>
-                                <p>Sử dụng vật liệu đóng gói chuyên dụng</p>
-                                <p>Đảm bảo sản phẩm không bị hư hỏng trong quá trình vận chuyển</p>
-                            </div>
-                            <div class="shipping-item">
-                                <h4>⏰ Thời Gian Giao Hàng</h4>
-                                <p>Giao hàng trong vòng 1-3 ngày làm việc</p>
-                                <p>Hỗ trợ giao hàng khẩn cấp trong ngày (phụ phí)</p>
+                            <h4>🛠️ Giao Hàng & Lắp Đặt</h4>
+                            <p>Giao hàng và lắp đặt tận nơi theo lịch hẹn với khách hàng</p>
+                            <p>Có hỗ trợ lắp đặt khẩn cấp trong ngày (phụ phí)</p>
                             </div>
                         </div>
                         <div class="shipping-coverage">
@@ -761,21 +710,20 @@ const serviceDetails = {
                     <div class="service-detail">
                         <h3>🎧 Hỗ Trợ Khách Hàng</h3>
                         <div class="support-channels">
-                            <div class="support-item">
+                            <div class="support-item" onclick="makePhoneCall('0799040616')">
                                 <h4>📞 Hotline 24/7</h4>
                                 <p class="contact-number">0799.040.616</p>
-                                <p>Đội ngũ tư vấn viên chuyên nghiệp luôn sẵn sàng hỗ trợ</p>
+                                <p>Nhấn để gọi ngay - Đội ngũ tư vấn viên chuyên nghiệp luôn sẵn sàng hỗ trợ</p>
                             </div>
-<div class="support-item">
-    <h4>📱 Zalo Hỗ Trợ</h4>
-    <p>Nhắn tin nhanh qua Zalo</p>
-    <p>Phản hồi trong giờ hành chính</p>
-    <a href="https://zalo.me/0799040616" target="_blank" style="color: #0088cc; text-decoration: underline;">Chat qua Zalo</a>
-</div>
-                            <div class="support-item">
+                            <div class="support-item" onclick="openZalo('0799040616')">
+                                <h4>📱 Zalo Hỗ Trợ</h4>
+                                <p class="contact-number">0799.040.616</p>
+                                <p>Nhấn để chat qua Zalo - Phản hồi trong giờ hành chính</p>
+                            </div>
+                            <div class="support-item" onclick="sendEmail('hoanganh23476@gmail.com')">
                                 <h4>📧 Email Hỗ Trợ</h4>
                                 <p class="contact-email">hoanganh23476@gmail.com</p>
-                                <p>Gửi yêu cầu chi tiết, nhận phản hồi trong 2-4 giờ</p>
+                                <p>Nhấn để gửi email - Nhận phản hồi trong 2-4 giờ</p>
                             </div>
                         </div>
                         <div class="support-services">
@@ -792,6 +740,32 @@ const serviceDetails = {
                 `
     }
 };
+
+// Hàm xử lý các tương tác
+function makePhoneCall(phoneNumber) {
+    window.location.href = `tel:${phoneNumber}`;
+}
+
+function openZalo(phoneNumber) {
+    // Mở Zalo với số điện thoại
+    const zaloUrl = `https://zalo.me/${phoneNumber}`;
+    window.open(zaloUrl, '_blank');
+}
+
+function sendEmail(email) {
+    window.location.href = `mailto:${email}?subject=Yêu cầu tư vấn cửa nhôm&body=Xin chào, tôi muốn được tư vấn về sản phẩm cửa nhôm.`;
+}
+
+function openGoogleMaps() {
+    // Thay thế tọa độ này bằng tọa độ thực tế của xưởng
+    const latitude = 10.8231; // Tọa độ mẫu cho TP.HCM
+    const longitude = 106.6297;
+    const address = "Chợ Cầu, Tiên Điền, Nghi Xuân, Hà Tĩnh";
+
+    // Mở Google Maps với địa chỉ
+    const mapsUrl = `https://www.google.com/maps/place/Chợ+Cầu/@18.6592211,105.782445,19.7z/data=!4m6!3m5!1s0x313833c73cbed1c7:0xe1222f1f36621da1!8m2!3d18.6591993!4d105.7830219!16s%2Fg%2F11h54fsvb_?entry=ttu&g_ep=EgoyMDI1MDcwOS4wIKXMDSoASAFQAw%3D%3D`;
+    window.open(mapsUrl, '_blank');
+}
 
 // Function to open service detail modal
 function openServiceDetail(serviceType) {
