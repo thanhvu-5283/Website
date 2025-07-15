@@ -221,7 +221,15 @@ body {
     animation: snow 10s linear infinite;
     opacity: 0.6;
 }
-
+.hero .fish {
+  position: absolute;
+  top: -35%;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+  pointer-events: none;
+}
 @keyframes snow {
     0% {
         transform: translateY(-100vh) translateX(0);
@@ -848,6 +856,17 @@ body {
     padding: 20px;
     border-radius: 15px;
     margin-bottom: 20px;
+    transition: box-shadow 0.3s ease, transform 0.3s ease, background-color 0.3s ease;
+    border: 2px solid transparent;
+    box-sizing: border-box;
+    cursor: default;
+}
+
+.product-specs:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15);
+    background-color: #f0f4f8;
+    border-color: transparent;
 }
 
 .spec-item {
@@ -855,11 +874,19 @@ body {
     justify-content: space-between;
     padding: 10px 0;
     border-bottom: 1px solid #e9ecef;
+    transition: background-color 0.3s ease;
 }
 
 .spec-item:last-child {
     border-bottom: none;
 }
+
+.spec-item:hover {
+    background-color: #f0f4f8;
+    cursor: pointer;
+}
+
+
 
 .contact-info {
     background: linear-gradient(135deg, #28a745, #20c997);
@@ -867,7 +894,16 @@ body {
     padding: 20px;
     border-radius: 15px;
     text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: default;
 }
+
+.contact-info:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15);
+    cursor: pointer;
+}
+
 
 @keyframes fadeIn {
     from {
@@ -936,7 +972,6 @@ body {
     font-weight: bold;
     font-size: 16px;
 }
-
 .price-note,
 .shipping-coverage,
 .support-services {
@@ -944,6 +979,16 @@ body {
     padding: 20px;
     border-radius: 10px;
     margin-top: 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: default;
+}
+
+.price-note:hover,
+.shipping-coverage:hover,
+.support-services:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(44, 90, 160, 0.15);
+    cursor: pointer;
 }
 
 .price-note h4,
@@ -966,6 +1011,7 @@ body {
     padding: 5px 0;
     color: #555;
 }
+
 
 .price-item,
 .shipping-item,
@@ -1158,138 +1204,6 @@ body {
     }
 }
 
-/* Sóng nền */
-.wave-container {
-    position: absolute;
-    top: 0;
-    left: 50%;
-    width: 540px;
-    height: 700px;
-    margin-left: -270px;
-    /* căn giữa */
-    overflow: visible;
-    pointer-events: none;
-    /* cho sóng không chắn tương tác */
-    z-index: 0;
-    /* nằm dưới các phần khác */
-}
-
-.wave {
-    position: absolute;
-    width: 540px;
-    height: 700px;
-    background: linear-gradient(744deg, #af40ff, #5b42f3 60%, #00ddeb);
-    border-radius: 40%;
-    opacity: 0.6;
-    animation: wave-rotate 30s linear infinite;
-}
-
-.wave:nth-child(2) {
-    animation-duration: 40s;
-    top: 210px;
-}
-
-.wave:nth-child(3) {
-    animation-duration: 50s;
-    top: 210px;
-}
-
-@keyframes wave-rotate {
-    from {
-        transform: rotate(0deg);
-    }
-
-    to {
-        transform: rotate(360deg);
-    }
-}
-
-.matrix-container {
-    position: fixed;
-    /* hoặc absolute nếu trong phần tử khác */
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    width: 100vw;
-    height: 100vh;
-    background: #000;
-    overflow: hidden;
-    pointer-events: none;
-    /* tránh che chắn khi dùng làm bg */
-    z-index: -1;
-    /* đặt phía sau nội dung */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.matrix-pattern {
-    position: relative;
-    width: 100%;
-    height: 100%;
-}
-
-.matrix-column {
-    position: absolute;
-    top: -150%;
-    /* bắt đầu từ trên màn hình */
-    width: 20px;
-    height: 100%;
-    font-size: 16px;
-    line-height: 18px;
-    font-weight: bold;
-    animation: fall linear infinite;
-    white-space: nowrap;
-    user-select: none;
-    -webkit-user-select: none;
-}
-
-/* Tự động đặt vị trí cột đều cho 20 cột */
-.matrix-column:nth-child(n) {
-    left: calc((100% / 20) * (var(--i) - 1));
-}
-
-/* Gán biến --i cho từng cột bằng JS hoặc thủ công: */
-.matrix-column:nth-child(1) {
-    --i: 1;
-    animation-delay: -2.5s;
-    animation-duration: 3s;
-}
-
-.matrix-column:nth-child(2) {
-    --i: 2;
-    animation-delay: -3.2s;
-    animation-duration: 4s;
-}
-
-.matrix-column:nth-child(3) {
-    --i: 3;
-    animation-delay: -1.8s;
-    animation-duration: 2.5s;
-}
-
-.matrix-column:nth-child(4) {
-    --i: 4;
-    animation-delay: -2.9s;
-    animation-duration: 3.5s;
-}
-
-/* ... tiếp tục cho đủ 20 cột tương tự */
-
-
-/* Animation sóng rơi */
-@keyframes fall {
-    0% {
-        transform: translateY(-150%);
-        opacity: 1;
-    }
-
-    100% {
-        transform: translateY(150%);
-        opacity: 0;
-    }
-}
 
 .price-item {
     background: #fff;
@@ -1303,4 +1217,239 @@ body {
 .price-item:hover {
     transform: translateY(-10px);
     box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+}
+:root {
+  --coilSize: 14px;
+  --delayCount: 40ms;
+  --scaleMe: 1;
+
+  --scaleFlip: 1;
+  --posFlip: 0;
+
+}
+.fish {
+  position: absolute;
+  top: -35%;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  filter: drop-shadow(
+    calc(var(--coilSize) * 4) calc(var(--coilSize) / 3) 5px rgba(0, 0, 0, 0.3)
+  );
+}
+.fish .koiCoil {
+  position: absolute;
+  width: var(--coilSize);
+  height: var(--coilSize);
+  background-color: orangered;
+  border-radius: 50%;
+  top: 50%;
+  left: 50%;
+  margin-left: calc(var(--coilSize) / -2);
+  margin-top: calc(var(--coilSize) / -2);
+  transform: scale(var(--scaleMe), var(--scaleMe));
+  filter: contrast(200%);
+  offset-path: path(
+    "M11.7692 229.5C14.552 200.052 7.51901 171.858 -42.8757 170.644C-105.869 169.128 -131.294 76.612 -101.695 51.5872C-72.0955 26.5625 -24.6607 -50.7867 70.5883 51.5872C165.837 153.961 27.7073 131.211 33.0199 183.157C38.3326 235.102 90.3211 195.669 139.274 223.727C188.226 251.785 207.959 299.56 139.274 316.243C70.5883 332.926 41.3685 398.9 81.9726 419.754C122.577 440.608 222 478.524 222 419.754C222 372.738 222 242.432 222 183.157C219.091 129.948 175.78 30.8091 25.8099 59.9288C-161.652 96.3284 -30.3529 119.837 25.8099 141.07C81.9726 162.303 171.529 204.769 126.751 260.506C81.9726 316.243 101.326 362.501 139.274 373.496C177.222 384.492 170.012 464.495 70.5883 462.979C-28.835 461.462 -42.8757 393.015 -42.8757 373.496C-42.8757 238.288 11.7692 293 11.7692 240.506C11.7692 208.05 11.7692 237.336 11.7692 229.5Z"
+  );
+  animation: fishAnim 20000ms linear infinite;
+  box-shadow: calc(var(--coilSize) / -2) calc(var(--coilSize) / -10) 0 white
+    inset;
+}
+
+.fish:nth-of-type(2) {
+  transform-origin: top center;
+  transform: scale(-1, 1);
+  filter: drop-shadow(
+    calc(var(--coilSize) * -4) calc(var(--coilSize) / 3) 5px rgba(0, 0, 0, 0.3)
+  );
+}
+.fish:nth-of-type(2) .koiCoil {
+  background-color: white;
+  box-shadow: calc(var(--coilSize) / -2) calc(var(--coilSize) / -10) 0 orangered
+    inset;
+}
+.fish .koiCoil:nth-of-type(15),
+.fish .koiCoil:nth-of-type(14) {
+  background-color: orangered;
+}
+.fish:nth-of-type(2) .koiCoil:nth-of-type(15),
+.fish:nth-of-type(2) .koiCoil:nth-of-type(14) {
+  background-color: white;
+}
+.fish .koiCoil:nth-of-type(15)::after {
+  content: ":";
+  position: absolute;
+  color: black;
+  font-weight: 800;
+  text-align: center;
+  line-height: 60%;
+  font-size: calc(var(--coilSize) * 1.2);
+}
+.fish .koiCoil:nth-of-type(1)::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 50%;
+  top: 25%;
+  left: -100%;
+  border-radius: var(--coilSize);
+  background-color: white;
+  /*box-shadow: calc(var(--coilSize) / -10) calc(var(--coilSize) / -4) calc(var(--coilSize) / 3) rgba(0,0,0,.3) inset;*/
+  transform-origin: center right;
+  animation: backFlip 200ms ease-in-out alternate infinite;
+}
+.fish .koiCoil:nth-of-type(14) {
+  --scaleMe: 1.2;
+  animation-delay: calc(var(--delayCount) * 1);
+}
+.fish .koiCoil:nth-of-type(13) {
+  --scaleMe: 1.35;
+  animation-delay: calc(var(--delayCount) * 2);
+}
+.fish .koiCoil:nth-of-type(12) {
+  --scaleMe: 1.55;
+  animation-delay: calc(var(--delayCount) * 3);
+}
+.fish .koiCoil:nth-of-type(11) {
+  --scaleMe: 1.75;
+  animation-delay: calc(var(--delayCount) * 4);
+}
+.fish .koiCoil:nth-of-type(10) {
+  --scaleMe: 1.9;
+  animation-delay: calc(var(--delayCount) * 5);
+}
+.fish .koiCoil:nth-of-type(9) {
+  --scaleMe: 2;
+  animation-delay: calc(var(--delayCount) * 6);
+}
+.fish .koiCoil:nth-of-type(8) {
+  --scaleMe: 2;
+  animation-delay: calc(var(--delayCount) * 7);
+}
+.fish .koiCoil:nth-of-type(7) {
+  --scaleMe: 2;
+  animation-delay: calc(var(--delayCount) * 8);
+}
+.fish .koiCoil:nth-of-type(6) {
+  --scaleMe: 1.9;
+  animation-delay: calc(var(--delayCount) * 9);
+}
+.fish .koiCoil:nth-of-type(5) {
+  --scaleMe: 1.75;
+  animation-delay: calc(var(--delayCount) * 10);
+}
+.fish .koiCoil:nth-of-type(4) {
+  --scaleMe: 1.55;
+  animation-delay: calc(var(--delayCount) * 11);
+}
+.fish .koiCoil:nth-of-type(3) {
+  --scaleMe: 1.35;
+  animation-delay: calc(var(--delayCount) * 12);
+}
+.fish .koiCoil:nth-of-type(2) {
+  --scaleMe: 1.2;
+  animation-delay: calc(var(--delayCount) * 13);
+}
+.fish .koiCoil:nth-of-type(1) {
+  animation-delay: calc(var(--delayCount) * 14);
+}
+.fish .koiCoil:nth-of-type(12)::before,
+.fish .koiCoil:nth-of-type(12)::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 20%;
+  top: -10%;
+  left: -100%;
+  border-radius: var(--coilSize);
+  background-color: white;
+  transform-origin: center right;
+  animation: sideFlip 500ms ease-in-out alternate infinite;
+}
+.fish .koiCoil:nth-of-type(12)::after {
+  --scaleFlip: -1;
+  --posFlip: calc(var(--coilSize) * -1);
+
+}
+@keyframes fishAnim {
+  0% {
+    offset-distance: 0%;
+  }
+  100% {
+    offset-distance: 100%;
+  }
+}
+@keyframes backFlip {
+  0% {
+    transform: rotate(45deg);
+  }
+  100% {
+    transform: rotate(-45deg);
+  }
+}
+@keyframes sideFlip {
+  0% {
+    transform: scale(1, var(--scaleFlip)) translateY(var(--posFlip))rotate(80deg);
+  }
+  100% {
+    transform: scale(1, var(--scaleFlip)) translateY(var(--posFlip))rotate(20deg);
+  }
+}
+.zoom-wrapper {
+    overflow: hidden;
+    border-radius: 10px;
+    width: 100%;
+    height: 300px;
+    border: 2px solid transparent;
+    box-sizing: border-box;
+    transition: box-shadow 0.3s ease, transform 0.3s ease, background-color 0.3s ease;
+    cursor: pointer;
+    background-color: #f8f9fa; /* nền xám nhạt */
+}
+
+.zoom-wrapper:hover {
+    transform: translateY(-5px); /* nhẹ nâng lên */
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15); /* bóng đổ dịu */
+    background-color: #f0f4f8; /* nền sáng hơn */
+    border-color: transparent; /* giữ viền trong suốt */
+}
+
+.zoom-wrapper img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    transition: transform 0.3s ease;
+}
+
+.zoom-wrapper:hover img {
+    transform: scale(1.15); /* zoom ảnh khi hover */
+}
+
+
+.modal-description-wrapper {
+    background: #f8f9fa;
+    padding: 20px;
+    border-radius: 15px;
+    margin-bottom: 20px;
+    transition: box-shadow 0.3s ease, transform 0.3s ease, background-color 0.3s ease;
+    border: 2px solid transparent;
+    box-sizing: border-box;
+    cursor: pointer;
+}
+
+.modal-description-wrapper:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15);
+    background-color: #f0f4f8;
+    border-color: transparent;
+}
+
+.modal-description-content > div {
+    transition: background-color 0.3s ease;
+}
+
+.modal-description-content > div:hover {
+    background-color: #f0f4f8;
+    cursor: pointer;
 }
